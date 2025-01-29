@@ -14,6 +14,7 @@ const url = process.env.RABBIT_MQ_ULR;
     if (msg !== null) {
       console.log(JSON.parse(msg.content.toString()));
       console.log("--------------------------");
+      console.log("new branch -- delete this")
       ch1.ack(msg);
     } else {
       console.log('Consumer cancelled by server');
